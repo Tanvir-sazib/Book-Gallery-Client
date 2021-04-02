@@ -9,13 +9,13 @@ For authentication I have used `firebase` authentication.
 
 ## Project Description
 
-This is a e-commerce web app with multiple functionalities. 
+This is a `e-commerce web app` with multiple functionalities. 
 At Home page Everybody can se all products/books.
-Then from there to buy any book the user have to login to the app. After getting log in user can order book.
-See order `details`, Can cancel order also.
+Then from there to `buy` any book the user have to `login` to the app. After getting log in user can `order` book.
+See `order details`, Can `cancel order` also.
 
 There is a admin panel in the app.
-admin can `Add` products/book, Delete a book and can update or edit any book's Name, Price, Image and other informations.
+admin can `Add` products/book, `Delete` a book and can` update` or `edit` any book's Name, Price, Image and other informations.
 
 ### `Dependencies`
 
