@@ -21,13 +21,13 @@ admin can `Add` products/book, `Delete` a book and can` update` or `edit` any bo
 
 For front-end `npm` dependency i have used:
 
-axios
-react-router-dom
-react-bootstrap
-firebase
-moment
-react-hook-form
-fontawesome icon pack
+axios, 
+react-router-dom, 
+react-bootstrap, 
+firebase,  
+moment, 
+react-hook-form, 
+fontawesome icon pack, 
 
 etc
 
