@@ -1,0 +1,15 @@
+.from-input{
+    background: rgba(175, 175, 175, 0.671);
+    padding: 1rem;
+    border-radius: 8px;
+}
+.submit-btn{
+    padding: .3rem .7rem;
+    border-radius: .4rem;
+    color: white;
+    background-color: rgb(18, 59, 241);
+    border:none
+}
+.books-container{
+    min-height: 100vh;
+}

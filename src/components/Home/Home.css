@@ -1,0 +1,17 @@
+.search-btn{
+    border: none;
+    background-color: rgb(84, 35, 199);
+    margin: 3rem 0rem;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.srch-input{
+    border: .5px solid rgba(128, 128, 128, 0.267);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 30%;
+}

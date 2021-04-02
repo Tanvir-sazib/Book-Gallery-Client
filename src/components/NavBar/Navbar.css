@@ -1,0 +1,50 @@
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.login-btn{
+    background:rgb(84, 35, 199);
+    border-radius: 5px;
+    color:white;
+    
+    border:none;
+    padding:0.5rem 0.7rem;
+}
+.login-btn a{
+    text-decoration: none;
+    font-weight: 700;
+    padding:0.5rem 0.7rem;
+    color: white !important;
+}
+.login-btn:hover a{
+    color: white;
+    padding:0.5rem 0.7rem;
+  
+}
+
+.link-item a{
+    padding:0.5rem 0.7rem;
+    color: white;
+    transition: 0.3s;
+}
+.link-item a:hover{
+    background:rgb(84, 35, 199);
+    padding:0.5rem 0.7rem;
+    text-decoration: none;
+    border-radius: 4px;
+    color:white
+}
+.nav-holder a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.counter{
+    background-color: red;
+}
+@media (max-width: 400px){
+   .nav{
+       margin-left: 0px;
+       flex-direction: column;
+   }
+
+}

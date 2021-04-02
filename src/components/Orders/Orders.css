@@ -1,0 +1,20 @@
+.order-items{
+    background:rgba(201, 201, 201, 0.651);
+    min-height: 70vh;
+    padding: 2rem 0rem;
+    margin: 0;
+    border-radius: 10px;
+}
+.details-btn{
+    font-size: 18px;
+    padding:.5rem 1rem;
+    color: white;
+    background-color: rgb(77, 60, 228);
+    border-radius: 7px;
+    border: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+.details-btn:hover{
+    background-color: rgb(58, 47, 155);
+}

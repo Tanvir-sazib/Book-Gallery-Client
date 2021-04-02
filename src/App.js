@@ -1,24 +1,75 @@
-import logo from './logo.svg';
+import { createContext, useState } from "react";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import './App.css';
+import AddBook from "./components/AddBook/AddBook";
+import Admin from "./components/Admin/Admin";
+import Cart from "./components/Cart/Cart";
+import EditBooks from "./components/EditBooks/EditBooks";
+import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
+import Managebooks from "./components/ManageBooks/Managebooks";
+import Orders from "./components/Orders/Orders";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import SignUp from "./components/SignUp/SignUp";
+import OrderDetails from './components/OrderDetails/OrderDetails'
+import Navbars from "./components/NavBar/Navbar";
+import EditById from "./components/EditByID/EditById";
 
+export const CartContext = createContext();
+export const UserContext = createContext();
 function App() {
+  const [cartItems, setCartItems] = useState([])
+  const [loggedInUser, setLoggedInUser] = useState({})
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <Router>
+        <Switch>
+          <div className="App">
+            <CartContext.Provider value={[cartItems, setCartItems]}>
+              <Route path='/' exact>
+
+                <Home />
+
+              </Route>
+              <PrivateRoute path='/checkout/add/:id'>
+                <Navbars />
+                <Cart />
+              </PrivateRoute>
+              <PrivateRoute path='/checkout' exact>
+                <Cart />
+              </PrivateRoute>
+            </CartContext.Provider>
+            <PrivateRoute path='/admin' exact>
+              <Admin />
+            </PrivateRoute>
+            <PrivateRoute path="/admin/manageBooks">
+              <Managebooks />
+            </PrivateRoute>
+            <PrivateRoute path='/admin/addBooks'>
+              <AddBook />
+            </PrivateRoute>
+            <PrivateRoute path='/admin/editBooks' exact>
+              <EditBooks />
+            </PrivateRoute>
+            <Route path='/login'>
+              <Login />
+            </Route>
+            <PrivateRoute path='/orders' exact>
+              <Orders />
+            </PrivateRoute>
+            <PrivateRoute path='/orders/details/:id'>
+              <OrderDetails />
+            </PrivateRoute>
+            <Route path='/signup'>
+              <SignUp />
+            </Route>
+            <Route path='/admin/editBooks/:id'>
+              <EditById />
+            </Route>
+          </div>
+        </Switch>
+      </Router>
+    </UserContext.Provider>
   );
 }
 

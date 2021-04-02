@@ -1,0 +1,37 @@
+.side-nav-holder{
+    background: rgba(0, 26, 143, 0.795);
+    height: 100%;
+    /* position: sticky; */
+   
+}
+
+.side-bar{
+    padding-top: 2rem;
+}
+.side-bar a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.side-bar a:hover{
+    text-decoration: none;
+    background-color: rgba(6, 39, 187, 0.795);
+    border-radius: 10px;
+}
+.head-logo{
+    padding-top: 1rem;
+}
+.head-logo a{
+   
+    font-size: 2 rem;
+    text-decoration: none;
+    color: white;
+}
+/* .link{
+    padding: 1.5rem;
+    text-decoration: none;
+    color: white;
+} */

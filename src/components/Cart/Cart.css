@@ -1,0 +1,23 @@
+.line{
+    min-height: 0.5px;
+    width: 100%;
+    background-color: rgba(163, 163, 163, 0.534);
+}
+.cart-items{
+    line-height: .3rem;
+    color: rgb(65, 65, 65);
+ 
+}
+.check-out-btn button{
+    background: rgb(84, 35, 199);
+    padding: 1rem 2rem;
+    color:white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.check-out-btn button:hover{
+    background: rgb(46, 16, 117);
+}

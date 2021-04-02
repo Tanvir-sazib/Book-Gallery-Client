@@ -1,0 +1,18 @@
+/* .login-card{
+    background: rgba(185, 185, 185, 0.24);
+    border-radius: 7px;
+    width: 25rem;
+} */
+.social-sign-in{
+    border-radius: 20px;
+    background: rgb(240, 47, 47);
+    border: none;
+    padding: .5rem 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.social-sign-in:hover{
+    background-color:rgb(158, 34, 34);
+}
